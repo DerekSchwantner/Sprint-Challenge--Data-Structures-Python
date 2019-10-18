@@ -54,7 +54,7 @@ class LinkedList:
 
 
 
-        
+
     # cur = self.head
     # new = cur.next_node
     # cur.next_node = None

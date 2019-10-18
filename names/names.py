@@ -15,7 +15,7 @@ f.close()
 
 duplicates = []
 
-
+# Original method is O(n²). for each name in the first list of 10,000 names, the loop will run max 10,000 times
 # for name_1 in names_1:
 #     for name_2 in names_2:
 #         if name_1 == name_2:
@@ -30,7 +30,7 @@ for name in names_1:
     if names_2_bst.contains(name):
         duplicates.append(name)
 
-
+# this version is  O(n) complexity. will increase constantly with the size of the list of names
 end_time = time.time()
 print (f"{len(duplicates)} duplicates:\n\n{', '.join(duplicates)}\n\n")
 print (f"runtime: {end_time - start_time} seconds")
